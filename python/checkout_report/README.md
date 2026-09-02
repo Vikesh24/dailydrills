@@ -7,6 +7,7 @@ Build an order-deduplication + SKU-frequency reporter for checkout events
 
 Background
 ───────────
+
 Swiggy Instamart's checkout event pipeline occasionally emits duplicate order records (network retries at the edge). Before events reach the warehouse loader, a lightweight in-memory pass needs to dedupe and summarize a batch of ~50K records per minute.
 
 What to Build
