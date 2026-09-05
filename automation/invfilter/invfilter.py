@@ -13,7 +13,7 @@ def filter_sku(log_lines, sku, min_abs_delta) -> tuple[list[dict], int]:
             try:
                 j_line = json.loads(line.strip())
 
-                if j_line["sku"] == sku and j_line["delta"] >= min_abs_delta:
+                if j_line["sku"].lower().startswith(sku) > -1 and j_line["delta"] >= min_abs_delta:
                     filtered_log_lines.append(j_line)
             except (json.JSONDecodeError, TypeError, KeyError) as e:
                 print(
@@ -31,7 +31,7 @@ def main():
     parser.add_argument("--min-abs-delta", type=int, default=0)
     args = parser.parse_args()
     filtered_lines, malformed_line = filter_sku(
-        sys.stdin, args.sku_prefix, args.min_abs_delta
+        sys.stdin, args.sku_prefix.lower(), args.min_abs_delta
     )
 
     for line in filtered_lines:
