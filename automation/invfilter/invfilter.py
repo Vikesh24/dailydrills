@@ -1,5 +1,6 @@
 import argparse
 import json
+import re
 import sys
 
 
@@ -7,13 +8,15 @@ def filter_sku(log_lines, sku, min_abs_delta) -> tuple[list[dict], int]:
 
     filtered_log_lines = []
     malformed_lines = 0
+    re_pattern = f"^{sku.lower()}"
+
     for line_number, line in enumerate(log_lines):
 
         if line.strip():
             try:
                 j_line = json.loads(line.strip())
 
-                if j_line["sku"].lower().startswith(sku) > -1 and j_line["delta"] >= min_abs_delta:
+                if re.search(re_pattern, j_line["sku"].lower()) and abs(j_line["delta"]) >= min_abs_delta:
                     filtered_log_lines.append(j_line)
             except (json.JSONDecodeError, TypeError, KeyError) as e:
                 print(
