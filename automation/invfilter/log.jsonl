@@ -1,0 +1,82 @@
+{"sku": "SKU-4471", "delta": -3, "warehouse": "BLR-1"}
+{"sku": "SKU-1024", "delta": 12, "warehouse": "BLR-2"}
+{"sku": "SKU-8830", "delta": 0, "warehouse": "DEL-1"}
+{"sku": "SKU-0007", "delta": -18, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": 4, "warehouse": "HYD-1", "reason": "cycle_count", "operator": "a.singh"}
+{"sku": "SKU-4471", "delta": 5, "warehouse": "DEL-1"}
+{"sku": "SKU-1024", "delta": -2, "warehouse": "HYD-2"}
+{"sku": "SKU-8830", "delta": 8, "warehouse": "MUM-1"}
+{"sku": "SKU-7788", "delta": -2, "warehouse": "BLR-1", "metadata": {"aisle": "A-04", "bin": "B-19", "priority": true}}
+{"sku": "SKU-9912", "delta": 7, "warehouse": "DEL-2", "tags": ["fragile", "recount"], "cost": 1499.95}
+{"sku": "SKU-3141", "delta": -1, "warehouse": "CHE-1", "dimensions": {"length": 12.5, "width": 8, "height": 3.25, "unit": "cm"}, "hazmat": false}
+{"sku": "SKU-2718", "delta": 25, "warehouse": "BLR-3", "batch": null, "notes": "restock\nfrom supplier"}
+{"sku": "SKU-4242", "delta": -999999, "warehouse": "", "audit": {"before": 1000000, "after": 1, "events": [{"type": "adjustment", "source": "admin"}, {"type": "approval", "source": "system"}]}}
+{"sku": "SKU-9001", "delta": 3, "warehouse": "BLR-1", "timestamp": "2025-01-15T09:30:00Z", "request_id": "req-7f3a", "attributes": {"temperature_c": -2.5, "sealed": true}}
+{"sku": "SKU-ÜNICODE", "delta": -6, "warehouse": "BENGALURU-北", "description": "café mug ☕"}
+{"sku": "SKU-1000", "delta": 1, "warehouse": "BLR-1", "extra": [1, 2, 3, {"nested": [true, false, null]}]}
+{"sku": "SKU-2000", "delta": "-4", "warehouse": "BLR-2"}
+{"sku": "SKU-3000", "delta": 5, "warehouse": "BLR-2", "unexpected": {"key with spaces": "value", "empty": []}}
+{"sku": "SKU-4000", "delta": 2, "warehouse": "BLR-1", "sku": "SKU-OVERRIDE"}
+{"sku": "SKU-5000", "delta": 9, "warehouse": "BLR-1"
+{"sku": "SKU-6000", "delta":, "warehouse": "BLR-1"}
+{"sku": "SKU-7000", "delta": 3, "warehouse": "BLR-1",}
+not-json-at-all
+{"sku": "SKU-8000", "delta": -2, "warehouse": "BLR-1"} trailing text
+{"sku": "SKU-9000", "delta": 1, "warehouse": "BLR-1", "note": "unterminated}
+[]
+null
+{"sku": "SKU-6100", "delta": 6, "warehouse": "BLR-2"}
+{"sku": "SKU-6200", "delta": -4, "warehouse": "DEL-1", "reason": "damage"}
+{"sku": "SKU-6300", "delta": 11, "warehouse": "MUM-2", "tags": ["priority", "recount"]}
+{"sku": "SKU-6400", "delta": 0, "warehouse": "HYD-1", "metadata": {"aisle": "C-02", "bin": "B-07"}}
+{"sku": "SKU-6500", "delta": -9, "warehouse": "CHE-1", "operator": "r.kumar"}
+{"sku": "SKU-4471", "delta": 2, "warehouse": "BLR-1"}
+{"sku": "SKU-1024", "delta": -1, "warehouse": "BLR-2"}
+{"sku": "SKU-8830", "delta": 6, "warehouse": "DEL-1"}
+{"sku": "SKU-0007", "delta": -4, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": 3, "warehouse": "HYD-1"}
+{"sku": "SKU-4471", "delta": -2, "warehouse": "DEL-1"}
+{"sku": "SKU-1024", "delta": 7, "warehouse": "HYD-2"}
+{"sku": "SKU-8830", "delta": -3, "warehouse": "MUM-1"}
+{"sku": "SKU-0007", "delta": 5, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": -6, "warehouse": "HYD-1"}
+{"sku": "SKU-4471", "delta": 4, "warehouse": "BLR-1"}
+{"sku": "SKU-1024", "delta": 2, "warehouse": "BLR-2"}
+{"sku": "SKU-8830", "delta": -5, "warehouse": "DEL-1"}
+{"sku": "SKU-0007", "delta": 8, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": 1, "warehouse": "HYD-1"}
+{"sku": "SKU-4471", "delta": -7, "warehouse": "DEL-1"}
+{"sku": "SKU-1024", "delta": 3, "warehouse": "HYD-2"}
+{"sku": "SKU-8830", "delta": 9, "warehouse": "MUM-1"}
+{"sku": "SKU-0007", "delta": -2, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": 6, "warehouse": "HYD-1"}
+{"sku": "SKU-4471", "delta": 1, "warehouse": "BLR-1"}
+{"sku": "SKU-1024", "delta": -4, "warehouse": "BLR-2"}
+{"sku": "SKU-8830", "delta": 2, "warehouse": "DEL-1"}
+{"sku": "SKU-0007", "delta": -9, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": 5, "warehouse": "HYD-1"}
+{"sku": "SKU-4471", "delta": -3, "warehouse": "DEL-1"}
+{"sku": "SKU-1024", "delta": 8, "warehouse": "HYD-2"}
+{"sku": "SKU-8830", "delta": -1, "warehouse": "MUM-1"}
+{"sku": "SKU-0007", "delta": 4, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": -2, "warehouse": "HYD-1"}
+{"sku": "SKU-4471", "delta": 6, "warehouse": "BLR-1"}
+{"sku": "SKU-1024", "delta": 1, "warehouse": "BLR-2"}
+{"sku": "SKU-8830", "delta": -6, "warehouse": "DEL-1"}
+{"sku": "SKU-0007", "delta": 3, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": 7, "warehouse": "HYD-1"}
+{"sku": "SKU-4471", "delta": -5, "warehouse": "DEL-1"}
+{"sku": "SKU-1024", "delta": 4, "warehouse": "HYD-2"}
+{"sku": "SKU-8830", "delta": 10, "warehouse": "MUM-1"}
+{"sku": "SKU-0007", "delta": -1, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": 2, "warehouse": "HYD-1"}
+{"sku": "SKU-4471", "delta": 9, "warehouse": "BLR-1"}
+{"sku": "SKU-1024", "delta": -8, "warehouse": "BLR-2"}
+{"sku": "SKU-8830", "delta": 3, "warehouse": "DEL-1"}
+{"sku": "SKU-0007", "delta": 6, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": -4, "warehouse": "HYD-1"}
+{"sku": "SKU-4471", "delta": -2, "warehouse": "DEL-1"}
+{"sku": "SKU-1024", "delta": 5, "warehouse": "HYD-2"}
+{"sku": "SKU-8830", "delta": 1, "warehouse": "MUM-1"}
+{"sku": "SKU-0007", "delta": -7, "warehouse": "MUM-3"}
+{"sku": "SKU-5500", "delta": 8, "warehouse": "HYD-1"}
