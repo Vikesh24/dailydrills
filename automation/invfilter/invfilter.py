@@ -12,7 +12,7 @@ def filter_sku(log_lines, sku, min_abs_delta) -> list[dict]:
             try:
                 j_line = json.loads(line.strip())
 
-                if j_line["sku"] == sku:
+                if j_line["sku"] == sku and j_line["delta"] >= min_abs_delta:
                     filtered_log_lines.append(j_line)
             except json.JSONDecodeError as e:
                 print(
@@ -25,23 +25,13 @@ def filter_sku(log_lines, sku, min_abs_delta) -> list[dict]:
                     file=sys.stderr,
                 )
 
-    if min_abs_delta:
-        delta_filtered_lines = []
-
-        for line in filtered_log_lines:
-
-            if abs(line["delta"]) >= min_abs_delta:
-                delta_filtered_lines.append(line)
-
-        return delta_filtered_lines
-
     return filtered_log_lines
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--sku-prefix", required=True)
-    parser.add_argument("--min-abs-delta", type=int)
+    parser.add_argument("--min-abs-delta", type=int, default=0)
     args = parser.parse_args()
     filtered_lines = filter_sku(sys.stdin, args.sku_prefix, args.min_abs_delta)
 
